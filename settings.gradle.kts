@@ -1,5 +1,7 @@
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google()
         gradlePluginPortal()
@@ -8,6 +10,7 @@ pluginManagement {
 }
 
 dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
     repositories {
         google()
         mavenCentral()
@@ -15,5 +18,7 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "SimpleToDoApp"
-include(":androidApp")
-include(":shared")
+include(
+    ":androidApp",
+    ":shared",
+)
