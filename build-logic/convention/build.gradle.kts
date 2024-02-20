@@ -29,5 +29,22 @@ gradlePlugin {
             id = "simpletodoapp.primitive.detekt"
             implementationClass = "xyz.miyayu.simpletodoapp.primitive.DetektPlugin"
         }
+        register("kmp") {
+            id = "simpletodoapp.primitive.kmp"
+            implementationClass = "xyz.miyayu.simpletodoapp.primitive.KmpPlugin"
+        }
+        register("kmpAndroid") {
+            id = "simpletodoapp.primitive.kmp.android"
+            implementationClass = "xyz.miyayu.simpletodoapp.primitive.KmpAndroidPlugin"
+        }
+        register("kmpiOS") {
+            id = "simpletodoapp.primitive.kmp.ios"
+            implementationClass = "xyz.miyayu.simpletodoapp.primitive.KmpIosPlugin"
+        }
+
+        register("androidApplication") {
+            id = "simpletodoapp.primitive.android.application"
+            implementationClass = "xyz.miyayu.simpletodoapp.primitive.AndroidApplicationPlugin"
+        }
     }
 }

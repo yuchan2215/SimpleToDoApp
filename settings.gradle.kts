@@ -19,6 +19,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "SimpleToDoApp"
 include(
-    ":androidApp",
-    ":shared",
+    ":app-android",
+    ":app-ios-shared",
+    ":core:data",
 )
