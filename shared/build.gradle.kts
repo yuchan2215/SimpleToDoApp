@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidGradleLibraryPlugin)
+    id("simpletodoapp.primitive.detekt")
 }
 
 kotlin {

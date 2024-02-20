@@ -20,4 +20,14 @@ tasks.withType<KotlinCompile>().configureEach {
 dependencies {
     implementation(libs.android.gradlePlugin)
     implementation(libs.kotlin.gradlePlugin)
+    implementation(libs.detekt.gradlePlugin)
+}
+
+gradlePlugin {
+    plugins {
+        register("detekt") {
+            id = "simpletodoapp.primitive.detekt"
+            implementationClass = "xyz.miyayu.simpletodoapp.primitive.DetektPlugin"
+        }
+    }
 }

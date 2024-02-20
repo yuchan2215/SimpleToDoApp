@@ -1,0 +1,70 @@
+complexity:
+  active: true
+  NestedBlockDepth:
+    threshold: 5
+
+coroutines:
+  active: true
+  GlobalCoroutineUsage:
+    active: true
+  SuspendFunSwallowedCancellation:
+    active: true
+  SuspendFunWithCoroutineScopeReceiver:
+    active: true
+
+empty-blocks:
+  active: true
+
+exceptions:
+  active: true
+  TooGenericExceptionCaught:
+    active: false
+
+naming:
+  active: true
+  FunctionNaming:
+    ignoreAnnotated:
+      - 'Composable'
+  MatchingDeclarationName:
+    excludes:
+      - "**/shared/**"
+
+performance:
+  active: true
+
+style:
+  active: true
+  ForbiddenComment:
+    active: false
+  DestructuringDeclarationWithTooManyEntries:
+    active: false
+  # デフォルトで無効なので「有効にする
+  ClassOrdering:
+    active: true
+  BracesOnIfStatements:
+    active: true
+  MandatoryBracesLoops:
+    active: true
+  UnusedPrivateMember:
+    active: true
+    ignoreAnnotated:
+      - 'Preview'
+
+potential-bugs:
+  active: true
+
+comments:
+  active: true
+  OutdatedDocumentation:
+    active: true
+
+formatting:
+  active: true
+  autoCorrect: true
+  NoWildcardImports:
+    active: false
+  TrailingCommaOnDeclarationSite:
+    active: true
+  TrailingCommaOnCallSite:
+    active: true
+
